@@ -1,0 +1,135 @@
+<div class="jumbotron">
+
+    <header>
+        <h1 class="display-4">Groceries List</h1>
+        <h6 class="lead">--Inspired by my darling hubby who always forgets a thing or two.--</h6>
+
+    </header>
+    <hr class="my-4">
+
+
+
+
+    <div class="container">
+        <h3>Enter New Item:</h3>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <label for="exampleFormControlInput1">ITEM</label>
+            </div>
+            <div class="col-sm-1 col-md-1">
+                <label for="exampleFormControlSelect1">Quantity</label>
+            </div>
+            <div class="col-sm-1 col-md-2">
+                <label for="exampleFormControlSelect2">Unit</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <input type="text" class="form-control" id="item" placeholder="item">
+            </div>
+
+            <div class="col-sm-1 col-md-1">
+                <select class="form-control" id="count">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11+</option>
+                </select>
+            </div>
+            <div class="col-sm-1 col-md-2">
+                <select class="form-control" id="type">
+                    <option>None</option>
+                    <option>Box</option>
+                    <option>Grams</option>
+                    <option>Oz</option>
+                    <option>Kg</option>
+                    <option>Lbs</option>
+                </select>
+            </div>
+            <div class=" col-sm-1 col-md-1">
+                <button id="saveItem" type="submit" class="btn btn-primary ">save</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">ITEMS LIST</h5>
+            <p class="card-text">Please choose an item to add to the groceries list:</p>
+
+            {{#each item}}
+            <div class="floatingL itemDiv">
+                <div class="itemText floatingL">
+                    <p class="itemP">{{item}}</p>
+                </div>
+
+                <div class="floatingR">
+                    {{!-- <a class="remove " id="delete" data-id={{"id"}}>Remove</a> --}}
+                    <button class="get floatingL btn btn-primary btn-success" data-id={{"id"}}>GET</button>
+                    <button class="remove floatingL btn btn-primary btn-secondary" data-id={{"id"}}>DEL</button>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card w-50">
+            <div class="card-body">
+                <h5 class="card-title">GET</h5>
+                <p class="card-text">Items To Buy</p>
+
+                {{#each getItem}}
+                <div class="floatingL gotItems">
+                    <div class="itemText floatingL">
+                        <p class="itemP">{{item}}</p>
+                    </div>
+
+                    <div class="floatingR">
+                        {{!-- <a class="remove " id="delete" data-id={{"id"}}>Remove</a> --}}
+                        <button class="gotit floatingL btn btn-primary btn-success" data-id={{"id"}}>GOT IT!!</button>
+
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+        <div class="card w-50">
+            <div class="card-body">
+                <h5 class="card-title">DONE</h5>
+                <p class="card-text">Items bought</p>
+
+                {{#each doneItem}}
+                <div class="floatingL gotItems">
+                    <div class="itemText floatingL">
+                        <p class="itemP">{{item}}</p>
+                    </div>
+
+                    <div class="floatingR">
+                        {{!-- <a class="remove " id="delete" data-id={{"id"}}>Remove</a> --}}
+                        <button class="done floatingL btn btn-primary btn-secondary" data-id={{"id"}}>DONE!!</button>
+
+                    </div>
+                </div>
+                {{/each}}
+
+
+            </div>
+        </div>
+    </div>
+</div>

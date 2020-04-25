@@ -1,0 +1,47 @@
+header{
+    text-align: center;
+}
+
+.floatingL{
+    float: left;
+}
+
+.itemDiv{
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    background-color: lightblue;
+    border-radius: 15px 25px;
+}
+
+.itemText{
+    /* text-align: justify; */
+    /* padding-top: 2%; */
+    width: 50%;
+    padding-left: 2%;
+    /* margin-top: 4%; */
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.floatingR{
+    float: right;
+}
+
+.itemP{
+    margin: 0;
+    padding: 0;
+}
+
+.gotItems{
+    width: 60%;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    background-color: lightblue;
+    border-radius: 15px 25px;
+}
