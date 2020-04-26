@@ -8,14 +8,8 @@ let groceriesItems = require("../models/groceriesItems");
 
 router.get("/", function (req, res) {
     groceriesItems.findItem({ getItem: 0 }, function (data) {
-
         groceriesItems.findItem({ getItem: 1 }, function (getdata) {
-
-
             groceriesItems.findItem({ getItem:2}, function (donedata) {
-
-
-
                 res.render("index",
                     {
                         item: data,
@@ -24,8 +18,6 @@ router.get("/", function (req, res) {
                     });
             });
         })
-        // res.render("index", {item:data});
-
     })
 })
 
