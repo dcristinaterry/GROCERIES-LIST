@@ -17,7 +17,6 @@ $("#saveItem").on("click", function (event) {
             }
         }).then(function () {
             location.reload();
-
         })
     }
 })

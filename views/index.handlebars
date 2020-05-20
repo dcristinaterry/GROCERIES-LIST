@@ -6,10 +6,6 @@
 
     </header>
     <hr class="my-4">
-
-
-
-
     <div class="container">
         <h3>Enter New Item:</h3>
 
@@ -47,7 +43,7 @@
             </div>
             <div class="col-sm-1 col-md-2">
                 <select class="form-control" id="type">
-                    <option>None</option>
+                    <option>-</option>
                     <option>Box</option>
                     <option>Grams</option>
                     <option>Oz</option>
@@ -71,9 +67,11 @@
             <p class="card-text">Please choose an item to add to the groceries list:</p>
 
             {{#each item}}
+
+            {{!-- if getstItem =0 --}}
             <div class="floatingL itemDiv">
                 <div class="itemText floatingL">
-                    <p class="itemP">{{item}}</p>
+                    <p class="itemP">{{item}} - {{quantity}} - {{units}}</p>
                 </div>
 
                 <div class="floatingR">
@@ -96,7 +94,7 @@
                 {{#each getItem}}
                 <div class="floatingL gotItems">
                     <div class="itemText floatingL">
-                        <p class="itemP">{{item}}</p>
+                        <p class="itemP">{{item}}- {{quantity}} - {{units}}</p>
                     </div>
 
                     <div class="floatingR">
