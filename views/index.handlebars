@@ -76,7 +76,7 @@
 
                 <div class="floatingR">
                     {{!-- <a class="remove " id="delete" data-id={{"id"}}>Remove</a> --}}
-                    <button class="get floatingL btn btn-primary btn-success" data-id={{"id"}}>GET</button>
+                    <button class="get floatingL btn btn-primary btn-success sm:h-2" data-id={{"id"}}>GET</button>
                     <button class="remove floatingL btn btn-primary btn-secondary" data-id={{"id"}}>DEL</button>
                 </div>
             </div>
@@ -85,8 +85,8 @@
         </div>
     </div>
 
-    <div class="md:card-group">
-        <div class="card md:w-50">
+    <div class="card-group">
+        <div class="card w-50">
             <div class="card-body">
                 <h5 class="card-title">GET ITEMS</h5>
                 <p class="card-text">Items To Buy</p>
@@ -107,7 +107,7 @@
             </div>
 
         </div>
-        <div class="card md:w-50">
+        <div class="card w-50">
             <div class="card-body">
                 <h5 class="card-title">DONE</h5>
                 <p class="card-text">Items bought</p>
@@ -125,8 +125,6 @@
                     </div>
                 </div>
                 {{/each}}
-
-
             </div>
         </div>
     </div>
