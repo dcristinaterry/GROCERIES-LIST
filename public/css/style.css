@@ -45,3 +45,9 @@ header{
     background-color: lightblue;
     border-radius: 15px 25px;
 }
+
+@media screen and (max-width: 768px) {
+    .gotItems {
+       width: 100%;
+    }
+  }
