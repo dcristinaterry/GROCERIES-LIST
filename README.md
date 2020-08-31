@@ -10,7 +10,7 @@ This application will allow you to have save your list of Items and move them to
 
 Project Location
 
->[Project's GitHub repository](https://github.com/crisdc88/H11-GET-GROCERIES)
+>[Project's GitHub repository](https://github.com/dcristinaterry/H11-GET-GROCERIES)
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ gif.
 
 D. Cristina Terry
 
-GitHub: [https://github.com/crisdc88/](https://github.com/crisdc88/),
+GitHub: [https://github.com/dcristinaterry/](https://github.com/dcristinaterry/),
 
 LinkedIn: [www.linkedin.com/in/dcristinaterry](www.linkedin.com/in/dcristinaterry)
 
