@@ -14,8 +14,6 @@ router.get("/", function (req, res) {
             groceriesItems.findItem({ getItem:2}, function (donedata) {
                 res.render("index",
                     {
-                       
-                       
                         item: data,
                         getItem: getdata,
                         doneItem:donedata

@@ -33,9 +33,7 @@ $(".get").on("click", function(event){
         }
     }).then(function () {
         location.reload();
-
     })
-
 })
 
 $(".gotit").on("click", function(event){
