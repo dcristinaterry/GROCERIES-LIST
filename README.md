@@ -4,7 +4,7 @@ Welcome to my Grocerires List app.
 
 ## Summary
 
-This application will allow you to have save your list of Items and move them to different places to avoid forgetting any item.
+This application will allow you to have saved your list of items, move them to different places to avoid forgetting any item when going shopping.
 
 ## GettingStarted
 
