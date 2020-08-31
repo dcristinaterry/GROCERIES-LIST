@@ -43,7 +43,7 @@ header{
     margin-right: auto;
     margin-bottom: 1%;
     background-color: lightblue;
-    border-radius: 15px 25px;
+    /* border-radius: 15px 25px; */
 }
 
 @media screen and (max-width: 768px) {
