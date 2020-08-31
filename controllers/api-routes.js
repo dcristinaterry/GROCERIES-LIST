@@ -81,18 +81,18 @@ router.put("/api/item/:id", function (req, res) {
 
 })
 
-// router.put("/api/getitem/:id", function (req, res) {
-//     let itemId = req.params.id;
-//     let getItem = req.body.getitem;
+router.put("/api/getitem/:id", function (req, res) {
+    let itemId = req.params.id;
+    let getItem = req.body.getitem;
 
-//     groceriesItems.update({ getItem: getItem }, { id: itemId }, function (result) {
-//         if (result.changedRows === 0) {
-//             return res.status(404).end();
-//         }
-//         res.status(200).end();
-//     })
+    groceriesItems.update({ getItem: getItem }, { id: itemId }, function (result) {
+        if (result.changedRows === 0) {
+            return res.status(404).end();
+        }
+        res.status(200).end();
+    })
 
-// })
+})
 
 router.delete("/api/getitem/:id", function (req, res) {
     let itemId = req.params.id;
