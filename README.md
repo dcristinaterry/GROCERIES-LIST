@@ -39,7 +39,7 @@ To run this application on your local machine follow these steps:
 
 ## Deployed Link
 
->N/A
+>link: [https://ct-groceries-list.herokuapp.com/](https://ct-groceries-list.herokuapp.com/)
 
 ## Code-Snippets
 
