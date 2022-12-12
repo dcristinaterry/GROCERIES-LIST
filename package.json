@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/crisdc88/H11-GET-GROCERIES#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^4.0.3",
     "handlebars": "^4.7.6",
     "mysql": "^2.18.1"
